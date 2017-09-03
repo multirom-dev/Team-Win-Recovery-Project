@@ -139,6 +139,7 @@
 		<style name="scrolllist">
 			<background color="%background_color%"/>
 			<font resource="font_m" spacing="%fileselector_spacing%" color="%text_color%"/>
+			<fastscroll linecolor="%fileselector_linecolor%" rectcolor="%accent_color%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
 		</style>
 
 		<style name="partitionlist">
@@ -1676,8 +1677,8 @@
 
 			<checkbox>
 				<placement x="%col1_x_right%" y="%row7a_y%"/>
-				<text>{@skip_md5_backup_chk=Skip MD5 generation during backup}</text>
-				<data variable="tw_skip_md5_generate"/>
+				<text>{@skip_digest_backup_chk=Skip Digest generation during backup}</text>
+				<data variable="tw_skip_digest_generate"/>
 			</checkbox>
 
 			<checkbox>
@@ -2272,8 +2273,8 @@
 
 			<checkbox>
 				<placement x="%col1_x_right%" y="%row6_y%"/>
-				<text>{@restore_enable_md5_chk=Enable MD5 Verification of Backup Files}</text>
-				<data variable="tw_skip_md5_check"/>
+				<text>{@restore_enable_digest_chk=Enable Digest Verification of Backup Files}</text>
+				<data variable="tw_skip_digest_check"/>
 			</checkbox>
 
 			<button style="main_button_half_width">
@@ -2866,11 +2867,11 @@
 				<listitem name="{@disable_backup_space_chk=Disable free space check before backup}">
 					<data variable="tw_disable_free_space"/>
 				</listitem>
-				<listitem name="{@skip_md5_backup_chk=Skip MD5 generation during backup}">
-					<data variable="tw_skip_md5_generate"/>
+				<listitem name="{@skip_digest_backup_chk=Skip Digest generation during backup}">
+					<data variable="tw_skip_digest_generate"/>
 				</listitem>
-				<listitem name="{@restore_enable_md5_chk=Enable MD5 verification of backup files}">
-					<data variable="tw_skip_md5_check"/>
+				<listitem name="{@restore_enable_digest_chk=Enable Digest verification of backup files}">
+					<data variable="tw_skip_digest_check"/>
 				</listitem>
 				<listitem name="{@use24clock_chk=Use 24-hour clock}">
 					<data variable="tw_military_time"/>
@@ -2884,6 +2885,10 @@
 				<listitem name="{@simfail_chk=Simulate failure for actions}">
 					<condition var1="tw_simulate_actions" var2="1"/>
 					<data variable="tw_simulate_fail"/>
+				</listitem>
+				<listitem name="{@sha2_chk=Use SHA2 for hashing}">
+					<condition var1="tw_no_sha2" var2="0"/>
+					<data variable="tw_use_sha2"/>
 				</listitem>
 			</listbox>
 
