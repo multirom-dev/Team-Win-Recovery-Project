@@ -37,7 +37,7 @@
 
 extern "C" {
 #include "../twcommon.h"
-#include "../digest/md5.h"
+#include "../twrpDigest/digest/md5/md5.h"
 #include "multirom_hooks.h"
 }
 
