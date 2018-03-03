@@ -554,13 +554,13 @@
 
 			<button style="tab">
 				<placement x="0" y="%row1_y%" w="%tab2_width%" h="%tab_height%"/>
-				<text>BOOT MENU</text>
+				<text>{@multirom_boot_menu=BOOT MENU}</text>
 				<action function="page">multirom_settings</action>
 			</button>
 
 			<button style="tab">
 				<placement x="%center_x%" y="%row1_y%" w="%tab2_width%" h="%tab_height%"/>
-				<text>AUTO BOOT</text>
+				<text>{@multirom_auto_boot=AUTO BOOT}</text>
 				<action function="page">multirom_settings_autoboot</action>
 			</button>
 		</template>
