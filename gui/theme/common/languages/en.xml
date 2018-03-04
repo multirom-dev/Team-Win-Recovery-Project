@@ -706,7 +706,7 @@
 		<string name="multirom_settings">Settings</string>
 		<string name="multirom_swap_roms">Swap ROMs</string>
 		<string name="multirom_list_roms_in">List ROMs from %tw_multirom_install_loc%</string>
-		<string name="multirom_select_rom_to_manage">Выберите прошивку:</string>
+		<string name="multirom_select_rom_to_manage">Select ROM to manage it:</string>
 		<string name="multirom_manage_rom">Select ROM to manage it:</string>
 		<string name="multirom_delete">Delete</string>
 		<string name="multirom_delete_rom">Delete ROM "%tw_multirom_rom_name%"?</string>
